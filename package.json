@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git@github.com:koajs/session.git"
   },
-  "version": "7.0.2",
+  "version": "7.1.0",
   "keywords": [
     "koa",
     "middleware",
@@ -48,6 +48,7 @@
     "ci": "egg-bin cov",
     "postci": "npm run prepublishOnly && npm run clean",
     "clean": "rimraf dist",
+    "prepare": "npm run prepublishOnly",
     "prepublishOnly": "tshy && tshy-after && attw --pack"
   },
   "type": "module",
